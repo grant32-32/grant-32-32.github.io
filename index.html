@@ -5,83 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI on the Internet</title>
     <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        /* Reset & Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; background-color: #f5f5f5; color: #222; line-height: 1.6; padding: 20px; }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #222;
-            line-height: 1.6;
-            padding: 20px;
-        }
+        header { text-align: center; padding: 50px 20px; }
+        header h1 { font-size: 3em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; color: #555; }
 
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
+        section { max-width: 800px; margin: 40px auto; padding: 20px; background-color: #fff; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        section:hover { transform: translateY(-5px); }
 
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-        }
+        section h2 { font-size: 2em; margin-bottom: 15px; color: #333; }
+        section p { margin-bottom: 15px; }
 
-        section {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-        }
+        img { max-width: 100%; border-radius: 10px; margin: 15px 0; transition: transform 0.3s ease; }
+        img:hover { transform: scale(1.05); }
 
-        section h2 {
-            font-size: 2em;
-            margin-bottom: 15px;
-            color: #333;
-        }
+        iframe { width: 100%; height: 400px; border: none; border-radius: 10px; margin: 15px 0; }
 
-        section p {
-            margin-bottom: 15px;
-        }
-
-        img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin: 15px 0;
-        }
-
-        iframe {
-            width: 100%;
-            height: 400px;
-            border: none;
-            border-radius: 10px;
-            margin: 15px 0;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #555;
-        }
+        footer { text-align: center; margin-top: 50px; font-size: 0.9em; color: #555; }
 
         /* Hidden Easter egg */
-        .secret {
-            display: none;
-        }
+        .secret { display: none; }
+        body:hover .secret { display: block; color: #ff6347; font-weight: bold; text-align: center; margin-top: 20px; }
 
-        body:hover .secret {
-            display: block;
-            color: #ff6347;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 20px;
-        }
+        /* Fun emojis in facts */
+        .fact::before { content: "💡 "; }
     </style>
 </head>
 <body>
@@ -92,22 +42,32 @@
 
     <section>
         <h2>What is AI?</h2>
-        <p>Artificial Intelligence (AI) is a branch of computer science that enables machines to mimic human intelligence. It’s widely used on the Internet for chatbots, recommendations, image recognition, and much more.</p>
+        <p>Artificial Intelligence (AI) is a branch of computer science that enables machines to mimic human intelligence. AI is everywhere online, from chatbots to recommendation engines, virtual assistants, and even self-driving cars.</p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Artificial_intelligence.png" alt="AI Concept Illustration">
     </section>
 
     <section>
         <h2>How AI Works on the Internet</h2>
-        <p>AI helps websites understand user behavior, provide smart search results, and improve experiences. Chatbots like ChatGPT use AI to answer questions, help with coding, or even create art.</p>
+        <p>AI helps websites understand user behavior, provide smart search results, detect spam, and improve online experiences. Chatbots like ChatGPT use AI to answer questions, help with coding, or even create art.</p>
         <iframe src="https://www.youtube.com/embed/2ePf9rue1Ao" title="How the Internet Works"></iframe>
     </section>
 
     <section>
-        <h2>Cool Facts About AI & the Internet</h2>
-        <p>1. AI powers personalized recommendations on platforms like YouTube and Netflix.</p>
-        <p>2. The Internet allows AI to learn from huge amounts of data across the globe.</p>
-        <p>3. Chatbots and virtual assistants are just the beginning of AI’s role online.</p>
+        <h2>Fun Facts About AI & the Internet</h2>
+        <p class="fact">AI powers personalized recommendations on platforms like YouTube, Netflix, and TikTok.</p>
+        <p class="fact">AI algorithms learn from huge amounts of data collected globally to improve accuracy.</p>
+        <p class="fact">Virtual assistants like Siri or Alexa are powered by AI and natural language processing.</p>
+        <p class="fact">AI can detect spam emails and fake news faster than humans.</p>
+        <p class="fact">Machine learning helps social media suggest friends, posts, and content you might like.</p>
+        <p class="fact">AI art generators can create paintings, music, and even memes in seconds!</p>
+        <p class="fact">Some AI chatbots can tutor students or help with language learning online.</p>
         <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Artificial_neural_network.svg" alt="Neural Network Diagram">
+    </section>
+
+    <section>
+        <h2>Why It Matters</h2>
+        <p>Understanding AI on the Internet helps us see how technology affects daily life, jobs, privacy, and online interactions. AI is a tool—but humans guide it, so learning about it is crucial.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Internet_map_1024.jpg/800px-Internet_map_1024.jpg" alt="Internet Map">
     </section>
 
     <footer>
@@ -116,3 +76,4 @@
     </footer>
 </body>
 </html>
+
